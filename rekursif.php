@@ -1,8 +1,7 @@
 <?php
 echo "NO.1 : <br><br>"; 
 error_reporting(0);
-
-$angka = 5;
+$batas = 5;
 function piramid($a, $b){
 if ($a >= 1) {
 	if ($b >= 1) {
@@ -17,24 +16,23 @@ piramid($a, $a);
 	}
 }
 }
-piramid ($angka, $angka);
+piramid ($batas, $batas);
 
 echo "===========================================<br>";
-echo "NO.2 : <br><br>";
-
-function angka($a, $b, $angka){
-if ($a <= $angka) {
+echo "NO.2 : <br><br>"; 
+function angka($a, $b, $batas){
+if ($a <= $batas) {
 	if ($b <= $a) {
 	echo "$b ";
 	$b++;
-angka($a, $b, $angka);
+angka($a, $b, $batas);
         
 }else{
 	echo "<br>";
 	$a++;
-angka($a, 1, $angka);
+angka($a, 1, $batas);
 		}
 }
 }
-angka (1, 1, $angka);
+angka (1, 1, $batas);
  ?>
